@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SolutionsByFJG — Efficiency Solutions for Small Business</title>
+  <meta name="description" content="FJG Solutions helps small businesses automate busywork, build a stronger online presence, and stop losing time and money to repetitive tasks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    a { color: #10b981; text-decoration: none; }
+    a:hover { color: #059669; }
+    h1, h2, h3 { font-family: 'Sora', sans-serif; font-weight: 700; }
+    button {
+      padding: 12px 32px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-family: 'Sora', sans-serif;
+    }
+    .btn-primary {
+      background-color: #10b981;
+      color: white;
+    }
+    .btn-primary:hover {
+      background-color: #059669;
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(16,185,129,0.35);
+    }
+    .card-hover {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 32px rgba(30,58,95,0.12);
+    }
+    .product-pill {
+      transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .product-pill:hover {
+      transform: translateY(-4px) rotate(-1deg);
+      background-color: #ecfdf5;
+      box-shadow: 0 12px 24px rgba(16,185,129,0.15);
+    }
+    .icon-badge {
+      transition: transform 0.2s ease;
+    }
+    .product-pill:hover .icon-badge {
+      transform: scale(1.12);
+    }
+    .contact-link {
+      transition: transform 0.2s ease;
+      display: inline-block;
+    }
+    .contact-link:hover {
+      transform: scale(1.05);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 40px !important; }
+      h2 { font-size: 28px !important; }
+      h3 { font-size: 18px !important; }
+      p { font-size: 15px !important; }
+      button { padding: 12px 28px !important; font-size: 15px !important; min-height: 44px !important; }
+      div[style*="grid-template-columns: repeat(3"],
+      div[style*="grid-template-columns: repeat(2"] {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+      }
+      div[style*="padding: 100px 40px 70px 40px"] { padding: 60px 20px 50px 20px !important; }
+      div[style*="padding: 30px 40px 90px 40px"] { padding: 20px 20px 50px 20px !important; }
+      div[style*="display: grid"][style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; gap: 40px !important; }
+      svg { max-width: 100% !important; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 32px !important; }
+      h2 { font-size: 24px !important; }
+      button { padding: 11px 24px !important; font-size: 14px !important; }
+      div[style*="padding: 100px 40px 70px 40px"] { padding: 50px 16px 40px 16px !important; }
+      div[style*="padding: 30px 40px 90px 40px"] { padding: 16px 16px 40px 16px !important; }
+      div[style*="gap: 30px"] { gap: 16px !important; }
+      div[style*="gap: 20px"] { gap: 14px !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<div style="background: linear-gradient(135deg, #1e3a5f 0%, #2d5580 100%); color: white; padding: 100px 40px 70px 40px; text-align: center; position: relative; overflow: hidden;">
+  <div style="position: absolute; top: -60px; right: -60px; width: 220px; height: 220px; background: rgba(16,185,129,0.15); border-radius: 50%;"></div>
+  <div style="position: absolute; bottom: -80px; left: -40px; width: 180px; height: 180px; background: rgba(16,185,129,0.12); border-radius: 50%;"></div>
+  <div style="max-width: 780px; margin: 0 auto; position: relative;">
+    <h1 style="font-size: 58px; margin: 0 0 16px 0; line-height: 1.15; letter-spacing: -0.5px;">SolutionsByFJG</h1>
+    <p style="font-size: 19px; margin: 0 0 38px 0; color: #6ee7b7; font-weight: 600;">Built for small businesses</p>
+    <button class="btn-primary" style="font-size: 18px; padding: 14px 40px;" onclick="window.location.href='mailto:SolutionsByFJG@gmail.com'">Get Started Today</button>
+  </div>
+</div>
+<div style="background: linear-gradient(135deg, #1e3a5f 0%, #2d5580 100%); line-height: 0; margin: -1px 0; position: relative; z-index: 1;">
+  <svg viewBox="0 0 1440 80" style="width: 100%; height: 60px; display: block;" preserveAspectRatio="none">
+    <path d="M0,32 C240,64 480,0 720,24 C960,48 1200,8 1440,36 L1440,80 L0,80 Z" fill="#f8fafc"></path>
+  </svg>
+</div>
+
+<!-- The Issue Section -->
+<div class="reveal" style="padding: 30px 40px 90px 40px; background-color: #f8fafc;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <h2 style="font-size: 40px; text-align: center; margin: 0 0 16px 0; color: #1e3a5f;">The Issue</h2>
+    <p style="text-align: center; max-width: 640px; margin: 0 auto 54px auto; color: #64748b; font-size: 17px;">You're losing time, money, and customers — and probably don't realize it.</p>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+      <div class="card-hover" style="background: white; padding: 36px; border-radius: 14px; border-top: 4px solid #1e3a5f;">
+        <h3 style="font-size: 19px; color: #1e3a5f; margin: 0 0 12px 0;">Invisible Online</h3>
+        <p style="margin: 0; color: #64748b; font-size: 15px;">Customers search for you daily. A weak website or no reviews sends them to competitors instead.</p>
+      </div>
+      <div class="card-hover" style="background: white; padding: 36px; border-radius: 14px; border-top: 4px solid #1e3a5f;">
+        <h3 style="font-size: 19px; color: #1e3a5f; margin: 0 0 12px 0;">Buried in Busywork</h3>
+        <p style="margin: 0; color: #64748b; font-size: 15px;">Booking calls, repeat questions, chasing reviews — hours wasted weekly on tasks that should run themselves.</p>
+      </div>
+      <div class="card-hover" style="background: white; padding: 36px; border-radius: 14px; border-top: 4px solid #1e3a5f;">
+        <h3 style="font-size: 19px; color: #1e3a5f; margin: 0 0 12px 0;">Stuck on Paper</h3>
+        <p style="margin: 0; color: #64748b; font-size: 15px;">No digital tools means falling behind competitors who've already automated.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background: #f8fafc; line-height: 0; margin: -1px 0; position: relative; z-index: 1;">
+  <svg viewBox="0 0 1440 80" style="width: 100%; height: 60px; display: block;" preserveAspectRatio="none">
+    <path d="M0,36 C240,4 480,68 720,32 C960,-4 1200,44 1440,20 L1440,80 L0,80 Z" fill="#10b981"></path>
+  </svg>
+</div>
+
+<!-- Solution Section -->
+<div class="reveal" style="padding: 30px 40px 90px 40px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white;">
+  <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+    <div>
+      <h2 style="font-size: 40px; margin: 0 0 26px 0; line-height: 1.2;">Our Solution</h2>
+      <p style="font-size: 17px; margin: 0 0 24px 0; line-height: 1.7;">Big-business tools, small-business price: automation, online presence, and systems that work around the clock.</p>
+      <div style="display: flex; flex-direction: column; gap: 15px;">
+        <div style="display: flex; gap: 15px; align-items: flex-start;">
+          <div style="width: 28px; height: 28px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <span style="font-size: 16px;">Affordable, done-for-you setup — no tech skills needed</span>
+        </div>
+        <div style="display: flex; gap: 15px; align-items: flex-start;">
+          <div style="width: 28px; height: 28px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <span style="font-size: 16px;">Automate the repetitive stuff so you can focus on the work</span>
+        </div>
+        <div style="display: flex; gap: 15px; align-items: flex-start;">
+          <div style="width: 28px; height: 28px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <span style="font-size: 16px;">Look bigger, more professional, and more trustworthy online</span>
+        </div>
+      </div>
+    </div>
+    <div style="background: rgba(255,255,255,0.1); border-radius: 14px; padding: 50px; text-align: center;">
+      <div style="font-size: 60px; font-weight: 800; margin-bottom: 10px; font-family: 'Sora', sans-serif;">10+ hrs</div>
+      <p style="font-size: 16px; margin: 0; font-weight: 500;">saved per week on average once automation is in place</p>
+    </div>
+  </div>
+</div>
+<div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); line-height: 0; margin: -1px 0; position: relative; z-index: 1;">
+  <svg viewBox="0 0 1440 80" style="width: 100%; height: 60px; display: block;" preserveAspectRatio="none">
+    <path d="M0,20 C240,52 480,4 720,30 C960,56 1200,12 1440,40 L1440,80 L0,80 Z" fill="#ffffff"></path>
+  </svg>
+</div>
+
+<!-- Value Props Section -->
+<div class="reveal" style="padding: 30px 40px 90px 40px; background-color: white;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <h2 style="font-size: 40px; text-align: center; margin: 0 0 54px 0; color: #1e3a5f;">Why Small Businesses Choose Us</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+      <div class="card-hover" style="padding: 36px; background: #f8fafc; border-radius: 14px; border-top: 4px solid #10b981;">
+        <h3 style="font-size: 21px; color: #1e3a5f; margin: 0 0 12px 0;">Small Business First</h3>
+        <p style="margin: 0; color: #64748b; line-height: 1.7; font-size: 15px;">Priced and sized for small teams — no bloated contracts</p>
+      </div>
+      <div class="card-hover" style="padding: 36px; background: #f8fafc; border-radius: 14px; border-top: 4px solid #10b981;">
+        <h3 style="font-size: 21px; color: #1e3a5f; margin: 0 0 12px 0;">Fast to Launch</h3>
+        <p style="margin: 0; color: #64748b; line-height: 1.7; font-size: 15px;">Up and running in days, not months</p>
+      </div>
+      <div class="card-hover" style="padding: 36px; background: #f8fafc; border-radius: 14px; border-top: 4px solid #10b981;">
+        <h3 style="font-size: 21px; color: #1e3a5f; margin: 0 0 12px 0;">Real Results</h3>
+        <p style="margin: 0; color: #64748b; line-height: 1.7; font-size: 15px;">More time, more leads, a stronger reputation online</p>
+      </div>
+      <div class="card-hover" style="padding: 36px; background: #f8fafc; border-radius: 14px; border-top: 4px solid #10b981;">
+        <h3 style="font-size: 21px; color: #1e3a5f; margin: 0 0 12px 0;">Always Supported</h3>
+        <p style="margin: 0; color: #64748b; line-height: 1.7; font-size: 15px;">We stick around after launch to support and grow</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background: white; line-height: 0; margin: -1px 0; position: relative; z-index: 1;">
+  <svg viewBox="0 0 1440 80" style="width: 100%; height: 60px; display: block;" preserveAspectRatio="none">
+    <path d="M0,40 C240,8 480,64 720,28 C960,-8 1200,48 1440,16 L1440,80 L0,80 Z" fill="#f8fafc"></path>
+  </svg>
+</div>
+
+<!-- Products Section -->
+<div class="reveal" style="padding: 30px 40px 90px 40px; background-color: #f8fafc;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <h2 style="font-size: 40px; text-align: center; margin: 0 0 20px 0; color: #1e3a5f;">What We Offer</h2>
+
+    <div style="max-width: 620px; margin: 0 auto 50px auto; text-align: center; background: white; border-radius: 14px; padding: 22px 30px; border: 2px solid #10b981; display: flex; align-items: center; justify-content: center; gap: 12px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+        <path d="M12 2 4 5v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V5z"></path>
+        <polyline points="9 12 11 14 15 10"></polyline>
+      </svg>
+      <p style="margin: 0; color: #1e3a5f; font-size: 15px; font-weight: 600;">30-Day Money-Back Guarantee — results, or your money back.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+      <div class="product-pill" style="background: white; padding: 24px 26px; border-radius: 12px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="icon-badge" style="width: 46px; height: 46px; background: #ecfdf5; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+            <path d="M21 3v5h-5"></path>
+            <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+            <path d="M3 21v-5h5"></path>
+          </svg>
+        </div>
+        <span style="font-weight: 600; color: #1e3a5f; font-size: 15px;">Workflow Automation</span>
+      </div>
+      <div class="product-pill" style="background: white; padding: 24px 26px; border-radius: 12px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="icon-badge" style="width: 46px; height: 46px; background: #ecfdf5; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11v2a2 2 0 0 0 2 2h1l4 4V5L6 9H5a2 2 0 0 0-2 2z"></path>
+            <path d="M15 8a4 4 0 0 1 0 8"></path>
+            <path d="M18 5a8 8 0 0 1 0 14"></path>
+          </svg>
+        </div>
+        <span style="font-weight: 600; color: #1e3a5f; font-size: 15px;">Marketing & Social Presence</span>
+      </div>
+      <div class="product-pill" style="background: white; padding: 24px 26px; border-radius: 12px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="icon-badge" style="width: 46px; height: 46px; background: #ecfdf5; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+            <path d="M16 3v4"></path>
+            <path d="M8 3v4"></path>
+            <path d="M3 10h18"></path>
+            <path d="M8 14h.01"></path>
+            <path d="M12 14h.01"></path>
+            <path d="M16 14h.01"></path>
+          </svg>
+        </div>
+        <span style="font-weight: 600; color: #1e3a5f; font-size: 15px;">Booking & Scheduling</span>
+      </div>
+      <div class="product-pill" style="background: white; padding: 24px 26px; border-radius: 12px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="icon-badge" style="width: 46px; height: 46px; background: #ecfdf5; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="13" rx="2"></rect>
+            <path d="M8 21h8"></path>
+            <path d="M12 17v4"></path>
+          </svg>
+        </div>
+        <span style="font-weight: 600; color: #1e3a5f; font-size: 15px;">Digitalization</span>
+      </div>
+      <div class="product-pill" style="background: white; padding: 24px 26px; border-radius: 12px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="icon-badge" style="width: 46px; height: 46px; background: #ecfdf5; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.63 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.63"></polygon>
+          </svg>
+        </div>
+        <span style="font-weight: 600; color: #1e3a5f; font-size: 15px;">Online Reputation</span>
+      </div>
+      <div class="product-pill" style="background: white; padding: 24px 26px; border-radius: 12px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="icon-badge" style="width: 46px; height: 46px; background: #ecfdf5; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </div>
+        <span style="font-weight: 600; color: #1e3a5f; font-size: 15px;">Overnight AI Receptionist (24/7 Chatbot)</span>
+      </div>
+      <div class="product-pill" style="background: white; padding: 24px 26px; border-radius: 12px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="icon-badge" style="width: 46px; height: 46px; background: #ecfdf5; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </div>
+        <span style="font-weight: 600; color: #1e3a5f; font-size: 15px;">AI Chat & Messaging Bots (Service or Leads)</span>
+      </div>
+      <div class="product-pill" style="background: white; padding: 24px 26px; border-radius: 12px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="icon-badge" style="width: 46px; height: 46px; background: #ecfdf5; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="M21 21l-4.35-4.35"></path>
+          </svg>
+        </div>
+        <span style="font-weight: 600; color: #1e3a5f; font-size: 15px;">Google Review + Management</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background: #f8fafc; line-height: 0; margin: -1px 0; position: relative; z-index: 1;">
+  <svg viewBox="0 0 1440 80" style="width: 100%; height: 60px; display: block;" preserveAspectRatio="none">
+    <path d="M0,24 C240,56 480,8 720,34 C960,60 1200,16 1440,42 L1440,80 L0,80 Z" fill="#1e3a5f"></path>
+  </svg>
+</div>
+
+<!-- CTA Section -->
+<div class="reveal" style="background: linear-gradient(135deg, #1e3a5f 0%, #2d5580 100%); color: white; padding: 30px 40px 90px 40px; text-align: center;">
+  <div style="max-width: 700px; margin: 0 auto;">
+    <h2 style="font-size: 42px; margin: 0 0 22px 0;">Let's Get Your Business Working Smarter</h2>
+    <p style="font-size: 17px; margin: 0 0 36px 0; color: #e0e7ff;">Let's talk about what's slowing you down.</p>
+    <button class="btn-primary" style="font-size: 18px; padding: 14px 40px; background-color: #10b981;" onclick="window.location.href='mailto:SolutionsByFJG@gmail.com'">Get Started Today</button>
+  </div>
+</div>
+<div style="background: linear-gradient(135deg, #1e3a5f 0%, #2d5580 100%); line-height: 0; margin: -1px 0; position: relative; z-index: 1;">
+  <svg viewBox="0 0 1440 60" style="width: 100%; height: 44px; display: block;" preserveAspectRatio="none">
+    <path d="M0,20 C240,44 480,0 720,18 C960,36 1200,4 1440,24 L1440,60 L0,60 Z" fill="#0f172a"></path>
+  </svg>
+</div>
+
+<!-- Footer -->
+<div style="background-color: #0f172a; color: white; padding: 20px 40px 44px 40px; text-align: center;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <h3 style="font-size: 24px; margin: 0 0 8px 0; font-family: 'Sora', sans-serif;">FJG Solutions</h3>
+    <p style="margin: 0 0 26px 0; color: #cbd5e1;">Efficiency Solutions for Small Business</p>
+    <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-bottom: 30px;">
+      <a class="contact-link" href="mailto:SolutionsByFJG@gmail.com" style="color: white;">
+        <p style="margin: 0 0 5px 0; color: #94a3b8; font-size: 14px;">Email</p>
+        <p style="margin: 0; font-weight: 600; color: #6ee7b7;">SolutionsByFJG@gmail.com</p>
+      </a>
+      <a class="contact-link" href="tel:+15852692089" style="color: white;">
+        <p style="margin: 0 0 5px 0; color: #94a3b8; font-size: 14px;">Phone</p>
+        <p style="margin: 0; font-weight: 600; color: #6ee7b7;">(585) 269-2089</p>
+      </a>
+    </div>
+    <p style="margin: 0; color: #64748b; font-size: 14px;">© 2026 FJG Solutions. All rights reserved.</p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || !els.length) {
+      els.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function (el) { io.observe(el); });
+  });
+</script>
+</body>
+</html>
