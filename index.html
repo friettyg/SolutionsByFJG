@@ -74,15 +74,30 @@
       opacity: 1;
       transform: translateY(0);
     }
-    @media (max-width: 720px) {
-      h1 { font-size: 38px !important; }
-      h2 { font-size: 30px !important; }
+    @media (max-width: 768px) {
+      h1 { font-size: 40px !important; }
+      h2 { font-size: 28px !important; }
+      h3 { font-size: 18px !important; }
+      p { font-size: 15px !important; }
+      button { padding: 12px 28px !important; font-size: 15px !important; min-height: 44px !important; }
       div[style*="grid-template-columns: repeat(3"],
       div[style*="grid-template-columns: repeat(2"] {
         grid-template-columns: 1fr !important;
+        gap: 20px !important;
       }
-      div[style*="padding: 100px 40px 70px 40px"] { padding: 70px 24px 50px 24px !important; }
-      div[style*="padding: 30px 40px 90px 40px"] { padding: 24px 24px 60px 24px !important; }
+      div[style*="padding: 100px 40px 70px 40px"] { padding: 60px 20px 50px 20px !important; }
+      div[style*="padding: 30px 40px 90px 40px"] { padding: 20px 20px 50px 20px !important; }
+      div[style*="display: grid"][style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; gap: 40px !important; }
+      svg { max-width: 100% !important; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 32px !important; }
+      h2 { font-size: 24px !important; }
+      button { padding: 11px 24px !important; font-size: 14px !important; }
+      div[style*="padding: 100px 40px 70px 40px"] { padding: 50px 16px 40px 16px !important; }
+      div[style*="padding: 30px 40px 90px 40px"] { padding: 16px 16px 40px 16px !important; }
+      div[style*="gap: 30px"] { gap: 16px !important; }
+      div[style*="gap: 20px"] { gap: 14px !important; }
     }
   </style>
 </head>
@@ -95,7 +110,7 @@
   <div style="max-width: 780px; margin: 0 auto; position: relative;">
     <h1 style="font-size: 58px; margin: 0 0 16px 0; line-height: 1.15; letter-spacing: -0.5px;">SolutionsByFJG</h1>
     <p style="font-size: 19px; margin: 0 0 38px 0; color: #6ee7b7; font-weight: 600;">Built for small businesses</p>
-    <button class="btn-primary" style="font-size: 18px; padding: 14px 40px;" onclick="window.location.href='mailto:friettyg@gmail.com'">Get Started Today</button>
+    <button class="btn-primary" style="font-size: 18px; padding: 14px 40px;" onclick="window.location.href='mailto:SolutionsByFJG@gmail.com'">Get Started Today</button>
   </div>
 </div>
 <div style="background: linear-gradient(135deg, #1e3a5f 0%, #2d5580 100%); line-height: 0; margin: -1px 0; position: relative; z-index: 1;">
@@ -306,7 +321,7 @@
   <div style="max-width: 700px; margin: 0 auto;">
     <h2 style="font-size: 42px; margin: 0 0 22px 0;">Let's Get Your Business Working Smarter</h2>
     <p style="font-size: 17px; margin: 0 0 36px 0; color: #e0e7ff;">Let's talk about what's slowing you down.</p>
-    <button class="btn-primary" style="font-size: 18px; padding: 14px 40px; background-color: #10b981;" onclick="window.location.href='mailto:friettyg@gmail.com'">Get Started Today</button>
+    <button class="btn-primary" style="font-size: 18px; padding: 14px 40px; background-color: #10b981;" onclick="window.location.href='mailto:SolutionsByFJG@gmail.com'">Get Started Today</button>
   </div>
 </div>
 <div style="background: linear-gradient(135deg, #1e3a5f 0%, #2d5580 100%); line-height: 0; margin: -1px 0; position: relative; z-index: 1;">
@@ -321,9 +336,9 @@
     <h3 style="font-size: 24px; margin: 0 0 8px 0; font-family: 'Sora', sans-serif;">FJG Solutions</h3>
     <p style="margin: 0 0 26px 0; color: #cbd5e1;">Efficiency Solutions for Small Business</p>
     <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-bottom: 30px;">
-      <a class="contact-link" href="mailto:friettyg@gmail.com" style="color: white;">
+      <a class="contact-link" href="mailto:SolutionsByFJG@gmail.com" style="color: white;">
         <p style="margin: 0 0 5px 0; color: #94a3b8; font-size: 14px;">Email</p>
-        <p style="margin: 0; font-weight: 600; color: #6ee7b7;">friettyg@gmail.com</p>
+        <p style="margin: 0; font-weight: 600; color: #6ee7b7;">SolutionsByFJG@gmail.com</p>
       </a>
       <a class="contact-link" href="tel:+15852692089" style="color: white;">
         <p style="margin: 0 0 5px 0; color: #94a3b8; font-size: 14px;">Phone</p>
